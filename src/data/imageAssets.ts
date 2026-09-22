@@ -21,18 +21,18 @@
  *     - ./assets/images/tejaswi_project_02_02.jpeg
  */
 
-import founderAarushiPortrait from './images/founder_aarushi_portrait.jpeg';
-import founderTejaswiPortrait from './images/founder_tejaswi_portrait.jpeg';
+import founderAarushiPortrait from "../assets/images/founder_aarushi_portrait.jpeg";
+import founderTejaswiPortrait from "../assets/images/founder_tejaswi_portrait.jpeg";
 
-import aarushiProject0101 from './images/aarushi_project_01_01.jpeg';
-import aarushiProject0102 from './images/aarushi_project_01_02.jpeg';
-import aarushiProject0201 from './images/aarushi_project_02_01.jpeg';
-import aarushiProject0202 from './images/aarushi_project_02_02.jpeg';
+import aarushiProject0101 from "../assets/images/aarushi_project_01_01.jpeg";
+import aarushiProject0102 from "../assets/images/aarushi_project_01_02.jpeg";
+import aarushiProject0201 from "../assets/images/aarushi_project_02_01.jpeg";
+import aarushiProject0202 from "../assets/images/aarushi_project_02_02.jpeg";
 
-import tejaswiProject0101 from './images/tejaswi_project_01_01.jpeg';
-import tejaswiProject0102 from './images/tejaswi_project_01_02.jpeg';
-import tejaswiProject0201 from './images/tejaswi_project_02_01.jpeg';
-import tejaswiProject0202 from './images/tejaswi_project_02_02.jpeg';
+import tejaswiProject0101 from "../assets/images/tejaswi_project_01_01.jpeg";
+import tejaswiProject0102 from "../assets/images/tejaswi_project_01_02.jpeg";
+import tejaswiProject0201 from "../assets/images/tejaswi_project_02_01.jpeg";
+import tejaswiProject0202 from "../assets/images/tejaswi_project_02_02.jpeg";
 
 export interface ImageSlotMeta {
   slotId: string;
