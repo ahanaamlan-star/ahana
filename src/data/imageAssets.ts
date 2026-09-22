@@ -21,6 +21,19 @@
  *     - ./assets/images/tejaswi_project_02_02.jpeg
  */
 
+import founderAarushiPortrait from './images/founder_aarushi_portrait.jpeg';
+import founderTejaswiPortrait from './images/founder_tejaswi_portrait.jpeg';
+
+import aarushiProject0101 from './images/aarushi_project_01_01.jpeg';
+import aarushiProject0102 from './images/aarushi_project_01_02.jpeg';
+import aarushiProject0201 from './images/aarushi_project_02_01.jpeg';
+import aarushiProject0202 from './images/aarushi_project_02_02.jpeg';
+
+import tejaswiProject0101 from './images/tejaswi_project_01_01.jpeg';
+import tejaswiProject0102 from './images/tejaswi_project_01_02.jpeg';
+import tejaswiProject0201 from './images/tejaswi_project_02_01.jpeg';
+import tejaswiProject0202 from './images/tejaswi_project_02_02.jpeg';
+
 export interface ImageSlotMeta {
   slotId: string;
   category: 'founder' | 'hero' | 'gallery' | 'detail' | 'material';
@@ -65,7 +78,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 01',
       subLabel: 'SELECTED PROJECT',
       aspectRatio: '16/10',
-      src: './assets/images/tejaswi_project_01_01.jpeg',
+      src: tejaswiProject0101,
       alt: 'Project 01 by Tejaswi MK',
       provenance: {
         sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -79,7 +92,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 01',
       subLabel: 'CARD THUMBNAIL',
       aspectRatio: '16/10',
-      src: './assets/images/tejaswi_project_01_01.jpeg',
+      src: tejaswiProject0101,
       alt: 'Project 01 Thumbnail',
       provenance: {
         sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -94,7 +107,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 01',
         subLabel: 'SALON COMPOSITION',
         aspectRatio: '16/9',
-        src: './assets/images/tejaswi_project_01_01.jpeg',
+        src: tejaswiProject0101,
         alt: 'Project 01 — Image 01',
         provenance: {
           sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -108,7 +121,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 02',
         subLabel: 'DINING COMPOSITION',
         aspectRatio: '16/9',
-        src: './assets/images/tejaswi_project_01_02.jpeg',
+        src: tejaswiProject0102,
         alt: 'Project 01 — Image 02',
         provenance: {
           sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -125,7 +138,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 02',
       subLabel: 'SELECTED PROJECT',
       aspectRatio: '16/10',
-      src: './assets/images/tejaswi_project_02_01.jpeg',
+      src: tejaswiProject0201,
       alt: 'Project 02 by Tejaswi MK',
       provenance: {
         sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -139,7 +152,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 02',
       subLabel: 'CARD THUMBNAIL',
       aspectRatio: '16/10',
-      src: './assets/images/tejaswi_project_02_01.jpeg',
+      src: tejaswiProject0201,
       alt: 'Project 02 Thumbnail',
       provenance: {
         sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -154,7 +167,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 01',
         subLabel: 'DOUBLE VANITY SUITE',
         aspectRatio: '16/9',
-        src: './assets/images/tejaswi_project_02_01.jpeg',
+        src: tejaswiProject0201,
         alt: 'Project 02 — Image 01',
         provenance: {
           sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -168,7 +181,7 @@ const tejaswiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 02',
         subLabel: 'BRASS TUB ALCOVE',
         aspectRatio: '16/9',
-        src: './assets/images/tejaswi_project_02_02.jpeg',
+        src: tejaswiProject0202,
         alt: 'Project 02 — Image 02',
         provenance: {
           sourceDocument: 'Tejaswi MK Portfolio PDF',
@@ -188,7 +201,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 01',
       subLabel: 'SELECTED PROJECT',
       aspectRatio: '16/10',
-      src: './assets/images/aarushi_project_01_01.jpeg',
+      src: aarushiProject0101,
       alt: 'Project 01 by Aarushi Panda',
       provenance: {
         sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -202,7 +215,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 01',
       subLabel: 'CARD THUMBNAIL',
       aspectRatio: '16/10',
-      src: './assets/images/aarushi_project_01_01.jpeg',
+      src: aarushiProject0101,
       alt: 'Project 01 Thumbnail',
       provenance: {
         sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -217,7 +230,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 01',
         subLabel: 'BRONZE BAS-RELIEF',
         aspectRatio: '16/9',
-        src: './assets/images/aarushi_project_01_01.jpeg',
+        src: aarushiProject0101,
         alt: 'Project 01 — Image 01',
         provenance: {
           sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -231,7 +244,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 02',
         subLabel: 'SUBTERRANEAN MAJLIS',
         aspectRatio: '16/9',
-        src: './assets/images/aarushi_project_01_02.jpeg',
+        src: aarushiProject0102,
         alt: 'Project 01 — Image 02',
         provenance: {
           sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -248,7 +261,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 02',
       subLabel: 'SELECTED PROJECT',
       aspectRatio: '16/10',
-      src: './assets/images/aarushi_project_02_01.jpeg',
+      src: aarushiProject0201,
       alt: 'Project 02 by Aarushi Panda',
       provenance: {
         sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -262,7 +275,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
       editorialLabel: 'PROJECT 02',
       subLabel: 'CARD THUMBNAIL',
       aspectRatio: '16/10',
-      src: './assets/images/aarushi_project_02_01.jpeg',
+      src: aarushiProject0201,
       alt: 'Project 02 Thumbnail',
       provenance: {
         sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -277,7 +290,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 01',
         subLabel: 'SUNSET PERGOLA',
         aspectRatio: '16/9',
-        src: './assets/images/aarushi_project_02_01.jpeg',
+        src: aarushiProject0201,
         alt: 'Project 02 — Image 01',
         provenance: {
           sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -291,7 +304,7 @@ const aarushiProjects: Record<string, ProjectAssetBundle> = {
         editorialLabel: 'IMAGE 02',
         subLabel: 'TERRACE BAR PAVILION',
         aspectRatio: '16/9',
-        src: './assets/images/aarushi_project_02_02.jpeg',
+        src: aarushiProject0202,
         alt: 'Project 02 — Image 02',
         provenance: {
           sourceDocument: 'Aarushi Panda Portfolio PDF',
@@ -312,7 +325,7 @@ export const imageAssets: ImageAssetsSystem = {
         editorialLabel: 'FOUNDER 01',
         subLabel: 'PORTRAIT',
         aspectRatio: '3/4',
-        src: './assets/images/founder_tejaswi_portrait.jpeg',
+        src: founderTejaswiPortrait,
         alt: 'Authoritative editorial portrait of Tejaswi MK, Founder / Creative Director of OVERDOSE',
         focalPoint: 'center 20%',
         provenance: {
@@ -331,7 +344,7 @@ export const imageAssets: ImageAssetsSystem = {
         editorialLabel: 'FOUNDER 02',
         subLabel: 'PORTRAIT',
         aspectRatio: '3/4',
-        src: './assets/images/founder_aarushi_portrait.jpeg',
+        src: founderAarushiPortrait,
         alt: 'Authoritative editorial portrait of Aarushi Panda, Founder / Creative Director of OVERDOSE',
         focalPoint: 'center 25%',
         provenance: {
