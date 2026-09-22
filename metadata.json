@@ -1,0 +1,6 @@
+{
+  "name": "OVERDOSE — Interior Design Studio",
+  "description": "OVERDOSE is a luxury interior design studio embracing curated excess and intentional maximalism through layered colour, texture, form, and emotional spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

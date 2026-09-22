@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180" width="160" height="180" fill="none">
+  <defs>
+    <!-- Distressed filter for the wine ring -->
+    <filter id="roughEdge" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- Left Ring: Dark Wine textured upright oval (height ~110, width ~75) -->
+  <g filter="url(#roughEdge)">
+    <ellipse cx="68" cy="85" rx="35" ry="52" stroke="currentColor" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Right Ring: Tilted cursive gold loop (tilted ~18deg, top reaches y=30, bottom reaches y=145) -->
+  <g transform="rotate(18 95 90)">
+    <ellipse cx="92" cy="90" rx="28" ry="58" stroke="#B08C4A" stroke-width="7" fill="none" />
+  </g>
+
+  <!-- Interlocking overlap: redraw front arc of the gold loop to weave over the front-right of the wine ring -->
+  <g transform="rotate(18 95 90)">
+    <path d="M 64,80 A 28 58 0 0 0 108,135" stroke="#B08C4A" stroke-width="7.5" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

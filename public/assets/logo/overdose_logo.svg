@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 140" width="680" height="140" fill="none">
+  <defs>
+    <filter id="distressedLetters" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.4" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,400&amp;display=swap');
+    .distressed-font {
+      font-family: 'Bodoni Moda', 'Didot', 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 82px;
+      letter-spacing: 0.08em;
+    }
+    .tagline-font {
+      font-family: 'Bodoni Moda', 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 15px;
+      letter-spacing: 0.22em;
+    }
+  </style>
+
+  <!-- Group for main wordmark -->
+  <g id="wordmark" filter="url(#distressedLetters)">
+    <!-- 'OVERD' -->
+    <text x="32" y="88" class="distressed-font" fill="currentColor">OVERD</text>
+
+    <!-- 'SE' (shifted after interlocking rings) -->
+    <text x="546" y="88" class="distressed-font" fill="currentColor">SE</text>
+  </g>
+
+  <!-- INTERLOCKING RINGS replacing the 'O' in DOSE (x ~ 455 to 540) -->
+  <g id="interlocking-rings-O" transform="translate(442, 10)">
+    <!-- Left Ring: Upright textured wine/theme oval (height ~68, width ~44) -->
+    <g filter="url(#distressedLetters)">
+      <ellipse cx="40" cy="62" rx="22" ry="34" stroke="currentColor" stroke-width="8" fill="none" />
+    </g>
+
+    <!-- Right Ring: Tilted cursive gold loop (tilted 18deg, top reaches y=22, bottom drops to y=102 below baseline) -->
+    <g transform="rotate(18 56 65)">
+      <ellipse cx="55" cy="65" rx="18" ry="39" stroke="#B08C4A" stroke-width="4.5" fill="none" />
+    </g>
+
+    <!-- Weave arc: gold ring passes over the front-right of the wine ring -->
+    <g transform="rotate(18 56 65)">
+      <path d="M 37,58 A 18 39 0 0 0 65,96" stroke="#B08C4A" stroke-width="5" fill="none" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Bottom Hairline with '— more is more —' Tagline -->
+  <g id="tagline-group" style="display:none;">
+    <!-- Left Hairline -->
+    <line x1="32" y1="0" x2="245" y2="0" stroke="currentColor" stroke-opacity="0.4" stroke-width="0.8" />
+    
+    <!-- Tagline Text -->
+    <text x="340" y="4" class="tagline-font" fill="currentColor" text-anchor="middle">— more is more —</text>
+    
+    <!-- Right Hairline -->
+    <line x1="435" y1="0" x2="648" y2="0" stroke="currentColor" stroke-opacity="0.4" stroke-width="0.8" />
+  </g>
+</svg>

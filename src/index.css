@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Bodoni Moda', Georgia, serif;
+    --font-display: 'Cormorant Garamond', Garamond, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-expanded: 'Syne', sans-serif;
+    --font-script: 'Alex Brush', cursive;
+
+    /* STRICT ADVERTISING & BRANDING PDF PALETTE */
+    --color-wine: #2B161A;
+    --color-midnight: #0D0D0D;
+    --color-charcoal: #1E1E1E;
+    --color-taupe: #887961;
+    --color-gold: #B08C4A;
+    --color-cream: #EDE6D8;
+    --color-burgundy: #641C25;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0D0D0D;
+    color: #EDE6D8;
+    letter-spacing: -0.01em;
+  }
+
+  /* When custom cursor is active on fine-pointer desktop, suppress default pointer */
+  @media (hover: hover) and (pointer: fine) {
+    body.custom-cursor-active,
+    body.custom-cursor-active a,
+    body.custom-cursor-active button,
+    body.custom-cursor-active [role="button"],
+    body.custom-cursor-active input,
+    body.custom-cursor-active select,
+    body.custom-cursor-active textarea {
+      cursor: none !important;
+    }
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+
+  .font-serif-display {
+    font-family: var(--font-display);
+  }
+
+  .font-flourish {
+    font-family: var(--font-display);
+    font-style: italic;
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+
+  .font-sans-editorial {
+    font-family: var(--font-expanded);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+  }
+}
+
+/* Editorial Film Grain & Architectural Grid */
+.grain-overlay {
+  background-image: radial-gradient(rgba(237, 230, 216, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.architectural-grid {
+  background-image: linear-gradient(to right, rgba(176, 140, 74, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(176, 140, 74, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Torn paper / distressed editorial edge effect from Page 1 of PDF */
+.torn-paper-edge {
+  position: relative;
+}
+.torn-paper-edge::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-size: 16px 6px;
+  background-repeat: repeat-x;
+}
+
+/* Smooth dark transitions */
+* {
+  border-color: rgba(237, 230, 216, 0.12);
+}
+
+/* Custom scrollbar for dark editorial feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #2B161A;
+  border: 1px solid rgba(176, 140, 74, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #641C25;
+}
+
+/* Editorial Menu Animations */
+@keyframes menuSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-item {
+  animation: menuSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
