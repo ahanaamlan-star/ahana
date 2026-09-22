@@ -1,5 +1,18 @@
 import React, { useEffect } from 'react';
 import { FounderWithProjects, FounderProject } from '../types';
+import founderAarushiPortrait from '../assets/images/founder_aarushi_portrait.jpeg';
+import founderTejaswiPortrait from '../assets/images/founder_tejaswi_portrait.jpeg';
+
+import aarushiProject0101 from '../assets/images/aarushi_project_01_01.jpeg';
+import aarushiProject0102 from '../assets/images/aarushi_project_01_02.jpeg';
+import aarushiProject0201 from '../assets/images/aarushi_project_02_01.jpeg';
+import aarushiProject0202 from '../assets/images/aarushi_project_02_02.jpeg';
+
+import tejaswiProject0101 from '../assets/images/tejaswi_project_01_01.jpeg';
+import tejaswiProject0102 from '../assets/images/tejaswi_project_01_02.jpeg';
+import tejaswiProject0201 from '../assets/images/tejaswi_project_02_01.jpeg';
+import tejaswiProject0202 from '../assets/images/tejaswi_project_02_02.jpeg';
+
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -31,28 +44,28 @@ export const FounderProfilePage: React.FC<FounderProfilePageProps> = ({
   const founderNumber = isAarushi ? '01' : '02';
 
   const portraitSrc = isAarushi
-    ? './assets/images/founder_aarushi_portrait.jpeg'
-    : './assets/images/founder_tejaswi_portrait.jpeg';
+    ? founderAarushiPortrait
+    : founderTejaswiPortrait;
 
   // Strict founder project images
   const project1Images = isAarushi
     ? [
-        './assets/images/aarushi_project_01_01.jpeg',
-        './assets/images/aarushi_project_01_02.jpeg',
+        aarushiProject0101,
+        aarushiProject0102,
       ]
     : [
-        './assets/images/tejaswi_project_01_01.jpeg',
-        './assets/images/tejaswi_project_01_02.jpeg',
+        tejaswiProject0101,
+        tejaswiProject0102,
       ];
 
   const project2Images = isAarushi
     ? [
-        './assets/images/aarushi_project_02_01.jpeg',
-        './assets/images/aarushi_project_02_02.jpeg',
+        aarushiProject0201,
+        aarushiProject0202,
       ]
     : [
-        './assets/images/tejaswi_project_02_01.jpeg',
-        './assets/images/tejaswi_project_02_02.jpeg',
+        tejaswiProject0201,
+        tejaswiProject0202,
       ];
 
   const founderProjects = founder.projects.slice(0, 2);
