@@ -1,5 +1,19 @@
 import { FounderWithProjects } from '../types';
 
+import founderAarushiPortrait from '../assets/images/founder_aarushi_portrait.jpeg';
+import founderTejaswiPortrait from '../assets/images/founder_tejaswi_portrait.jpeg';
+
+import aarushiProject0101 from '../assets/images/aarushi_project_01_01.jpeg';
+import aarushiProject0102 from '../assets/images/aarushi_project_01_02.jpeg';
+import aarushiProject0201 from '../assets/images/aarushi_project_02_01.jpeg';
+import aarushiProject0202 from '../assets/images/aarushi_project_02_02.jpeg';
+
+import tejaswiProject0101 from '../assets/images/tejaswi_project_01_01.jpeg';
+import tejaswiProject0102 from '../assets/images/tejaswi_project_01_02.jpeg';
+import tejaswiProject0201 from '../assets/images/tejaswi_project_02_01.jpeg';
+import tejaswiProject0202 from '../assets/images/tejaswi_project_02_02.jpeg';
+
+
 /**
  * AUTHORITATIVE FOUNDER AND PROJECT DATA MAPPING
  * 
@@ -39,7 +53,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
       sourceLabel: 'Aarushi Panda — Founder Portrait',
       visualDescription:
         'Aarushi Panda in an elegant evening gown with sculptural structured bow tie accent.',
-      localPath: './assets/images/founder_aarushi_portrait.jpeg',
+      localPath: founderAarushiPortrait,
       isExtractedLocally: true,
     },
     bio: 'Aarushi crafts immersive spatial narratives rooted in architectural drama, kinetic illumination, and atmospheric depth. Her design philosophy revolves around monumental scale and high-impact materiality—juxtaposing sculpted bronze foliage panels, suspended ribbon chandeliers, and subterranean sunken majlis salons with breathtaking panoramic landscape horizons.',
@@ -70,7 +84,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 01',
             visualDescription:
               'Haute couture architectural hospitality salon featuring sculpted bronze relief panels and kinetic luminaire.',
-            localPath: './assets/images/aarushi_project_01_01.jpeg',
+            localPath: aarushiProject0101,
             isExtractedLocally: true,
           },
           {
@@ -79,7 +93,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 02',
             visualDescription:
               'Subterranean conversational salon with intricate pierced wood jali screens and reflective grid ceiling.',
-            localPath: './assets/images/aarushi_project_01_02.jpeg',
+            localPath: aarushiProject0102,
             isExtractedLocally: true,
           },
         ],
@@ -118,7 +132,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 01',
             visualDescription:
               'Bougainvillea cliffside sunset terrace with raw timber dining tables and twilight views.',
-            localPath: './assets/images/aarushi_project_02_01.jpeg',
+            localPath: aarushiProject0201,
             isExtractedLocally: true,
           },
           {
@@ -127,7 +141,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 02',
             visualDescription:
               'Curved hammered brass terrace bar under organic timber rafters with oceanic horizon.',
-            localPath: './assets/images/aarushi_project_02_02.jpeg',
+            localPath: aarushiProject0202,
             isExtractedLocally: true,
           },
         ],
@@ -166,7 +180,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
       sourceLabel: 'Tejaswi MK — Founder Portrait',
       visualDescription:
         'Tejaswi MK on outdoor terrace balcony at night, framed by dark balustrades and garden foliage.',
-      localPath: './assets/images/founder_tejaswi_portrait.jpeg',
+      localPath: founderTejaswiPortrait,
       isExtractedLocally: true,
     },
     bio: 'Tejaswi champions the tactile intimacy and visceral materiality of Curated Excess. Her spaces orchestrate a seductive dialogue between monumental bookmatched natural stone, curved bouclé contours, exposed timber beams, and heritage metal patinas. Her portfolio explores deeply restorative residential sanctums where geological veins of marble and hand-hammered metals elevate everyday living rituals into celebratory art.',
@@ -197,7 +211,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 01',
             visualDescription:
               'Living room salon with aged terracotta walls, curved bouclé armchairs, and raw tree-trunk coffee table.',
-            localPath: './assets/images/tejaswi_project_01_01.jpeg',
+            localPath: tejaswiProject0101,
             isExtractedLocally: true,
           },
           {
@@ -206,7 +220,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 02',
             visualDescription:
               'Dining pavilion featuring polished Rosso Levanto marble table, spindle chairs, and sculptural mirror.',
-            localPath: './assets/images/tejaswi_project_01_02.jpeg',
+            localPath: tejaswiProject0102,
             isExtractedLocally: true,
           },
         ],
@@ -245,7 +259,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 01',
             visualDescription:
               'Master bath vanity suite with bookmatched Rosso Levanto marble and patinated brass fittings.',
-            localPath: './assets/images/tejaswi_project_02_01.jpeg',
+            localPath: tejaswiProject0201,
             isExtractedLocally: true,
           },
           {
@@ -254,7 +268,7 @@ export const FOUNDERS_DATA: FounderWithProjects[] = [
             sourceLabel: 'Image 02',
             visualDescription:
               'Freestanding solid brass slipper tub in arched marble alcove with cascading crystal chandelier.',
-            localPath: './assets/images/tejaswi_project_02_02.jpeg',
+            localPath: tejaswiProject0202,
             isExtractedLocally: true,
           },
         ],
