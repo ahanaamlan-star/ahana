@@ -1,14 +1,3 @@
-import founderAarushiPortrait from '../assets/images/founder_aarushi_portrait.jpeg';
-import founderTejaswiPortrait from '../assets/images/founder_tejaswi_portrait.jpeg';
-import aarushiProject0101 from '../assets/images/aarushi_project_01_01.jpeg';
-import aarushiProject0102 from '../assets/images/aarushi_project_01_02.jpeg';
-import aarushiProject0201 from '../assets/images/aarushi_project_02_01.jpeg';
-import aarushiProject0202 from '../assets/images/aarushi_project_02_02.jpeg';
-
-import tejaswiProject0101 from '../assets/images/tejaswi_project_01_01.jpeg';
-import tejaswiProject0102 from '../assets/images/tejaswi_project_01_02.jpeg';
-import tejaswiProject0201 from '../assets/images/tejaswi_project_02_01.jpeg';
-import tejaswiProject0202 from '../assets/images/tejaswi_project_02_02.jpeg';
 import {
   FounderWithProjects,
   MaterialItem,
@@ -18,6 +7,20 @@ import {
   FounderProject,
   BrandReferencePlate,
 } from '../types';
+
+import founderAarushiPortrait from '../assets/images/founder_aarushi_portrait.jpeg';
+import founderTejaswiPortrait from '../assets/images/founder_tejaswi_portrait.jpeg';
+
+import aarushiProject0101 from '../assets/images/aarushi_project_01_01.jpeg';
+import aarushiProject0102 from '../assets/images/aarushi_project_01_02.jpeg';
+import aarushiProject0201 from '../assets/images/aarushi_project_02_01.jpeg';
+import aarushiProject0202 from '../assets/images/aarushi_project_02_02.jpeg';
+
+import tejaswiProject0101 from '../assets/images/tejaswi_project_01_01.jpeg';
+import tejaswiProject0102 from '../assets/images/tejaswi_project_01_02.jpeg';
+import tejaswiProject0201 from '../assets/images/tejaswi_project_02_01.jpeg';
+import tejaswiProject0202 from '../assets/images/tejaswi_project_02_02.jpeg';
+
 
 export const STUDIO_DETAILS = {
   name: 'OVERDOSE',
@@ -39,8 +42,7 @@ export const STUDIO_DETAILS = {
     'The right people don’t just hire an interior designer. They choose a point of view.',
   customerVoice: '“I DON’T WANT MY SPACE TO LOOK LIKE EVERYONE ELSE’S.”',
   locations: ['Bangalore', 'Mumbai', 'Dubai', 'London'],
-  academicAffiliation:
-    'Department of Design (DOD), Manipal School of Architecture and Planning (MSAP), MAHE · SEM- V, B.Des ID',
+  academicAffiliation: 'OVERDOSE Atelier · Bangalore, Mumbai, Dubai, London',
 };
 
 export const COLOR_PALETTE: ColorSwatch[] = [
@@ -149,221 +151,8 @@ export const BRAND_VALUES: BrandValue[] = [
   },
 ];
 
-/**
- * AUTHORITATIVE FOUNDER AND PROJECT DATA MAPPING
- * Derived strictly from the uploaded founder portfolio PDFs:
- * - Tejaswi MK Portfolio PDF (5 pages)
- * - Aarushi Panda Portfolio PDF (5 pages)
- */
-/**
- * AUTHORITATIVE FOUNDER AND PROJECT IMAGE MAPPING
- *
- * IMPORTANT:
- * - Founder portraits use the exact portrait files in /assets/images/.
- * - Each founder has EXACTLY 2 projects.
- * - Each project has EXACTLY 2 provided photographs.
- * - No project details have been invented because only the photographs
- *   were provided. Project titles are intentionally kept as Project 01/02.
- * - Do not substitute, generate, crop, or mix images between founders.
- */
-export const FOUNDERS_DATA: FounderWithProjects[] = [
-  {
-    name: 'Tejaswi MK',
-    title: 'Co-Founder & Creative Director',
-    studentId: '244212022',
-    credentials: 'B.Des (Interior Design) · Semester V',
-    institution:
-      'Department of Design (DOD), Manipal School of Architecture and Planning (MSAP), MAHE',
-    sourcePdf: 'Tejaswi MK Portfolio PDF',
-    portraitSource: {
-      sourcePdf: 'Tejaswi MK Portfolio PDF',
-      pageNumber: 1,
-      sourceLabel: 'Tejaswi MK — Founder Portrait',
-      visualDescription: 'Exact founder portrait supplied as a static website asset.',
-      localPath: founderTejaswiPortrait,
-      isExtractedLocally: false,
-    },
-    bio: 'Tejaswi MK is a co-founder of OVERDOSE. Her founder profile and academic information are sourced from the supplied studio materials.',
-    signatureQuote: '“More is more.”',
-    designPhilosophy:
-      'A personalised approach to expressive, layered interiors, aligned with the OVERDOSE studio philosophy.',
-    signatures: [],
-    projects: [
-      {
-        id: 'tejaswi-project-01',
-        title: 'Project 01',
-        subtitle: 'Selected project by Tejaswi MK',
-        category: 'Interior Design',
-        leadFounder: 'Tejaswi MK',
-        sourcePdf: 'Provided project image assets',
-        sourcePages: [],
-        images: [
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Tejaswi Project 01 — Image 01',
-            visualDescription: 'Exact photograph supplied for Tejaswi MK Project 01.',
-            localPath: tejaswiProject0101,
-            isExtractedLocally: false,
-          },
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Tejaswi Project 01 — Image 02',
-            visualDescription: 'Exact photograph supplied for Tejaswi MK Project 01.',
-            localPath: tejaswiProject0102,
-            isExtractedLocally: false,
-          },
-        ],
-        description: 'Project information was not separately provided. The website should present the supplied photographs without inventing project facts.',
-        spatialVision: 'Project information not provided.',
-        materials: [],
-        lighting: 'Project information not provided.',
-        metadata: {
-          year: 'Not provided',
-          locationPlaceholder: 'Not provided',
-          intensity: 'Not provided',
-          palette: [],
-        },
-      },
-      {
-        id: 'tejaswi-project-02',
-        title: 'Project 02',
-        subtitle: 'Selected project by Tejaswi MK',
-        category: 'Interior Design',
-        leadFounder: 'Tejaswi MK',
-        sourcePdf: 'Provided project image assets',
-        sourcePages: [],
-        images: [
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Tejaswi Project 02 — Image 01',
-            visualDescription: 'Exact photograph supplied for Tejaswi MK Project 02.',
-            localPath: tejaswiProject0201,
-            isExtractedLocally: false,
-          },
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Tejaswi Project 02 — Image 02',
-            visualDescription: 'Exact photograph supplied for Tejaswi MK Project 02.',
-            localPath: tejaswiProject0202,
-            isExtractedLocally: false,
-          },
-        ],
-        description: 'Project information was not separately provided. The website should present the supplied photographs without inventing project facts.',
-        spatialVision: 'Project information not provided.',
-        materials: [],
-        lighting: 'Project information not provided.',
-        metadata: {
-          year: 'Not provided',
-          locationPlaceholder: 'Not provided',
-          intensity: 'Not provided',
-          palette: [],
-        },
-      },
-    ],
-  },
-  {
-    name: 'Aarushi Panda',
-    title: 'Co-Founder & Creative Director',
-    studentId: '244212056',
-    credentials: 'B.Des (Interior Design) · Semester V',
-    institution:
-      'Department of Design (DOD), Manipal School of Architecture and Planning (MSAP), MAHE',
-    sourcePdf: 'Aarushi Panda Portfolio PDF',
-    portraitSource: {
-      sourcePdf: 'Aarushi Panda Portfolio PDF',
-      pageNumber: 1,
-      sourceLabel: 'Aarushi Panda — Founder Portrait',
-      visualDescription: 'Exact founder portrait supplied as a static website asset.',
-      localPath: founderAarushiPortrait,
-      isExtractedLocally: false,
-    },
-    bio: 'Aarushi Panda is a co-founder of OVERDOSE. Her founder profile and academic information are sourced from the supplied studio materials.',
-    signatureQuote: '“More is more.”',
-    designPhilosophy:
-      'A personalised approach to expressive, layered interiors, aligned with the OVERDOSE studio philosophy.',
-    signatures: [],
-    projects: [
-      {
-        id: 'aarushi-project-01',
-        title: 'Project 01',
-        subtitle: 'Selected project by Aarushi Panda',
-        category: 'Interior Design',
-        leadFounder: 'Aarushi Panda',
-        sourcePdf: 'Provided project image assets',
-        sourcePages: [],
-        images: [
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Aarushi Project 01 — Image 01',
-            visualDescription: 'Exact photograph supplied for Aarushi Panda Project 01.',
-            localPath: aarushiProject0101,
-            isExtractedLocally: false,
-          },
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Aarushi Project 01 — Image 02',
-            visualDescription: 'Exact photograph supplied for Aarushi Panda Project 01.',
-            localPath: aarushiProject0102,
-            isExtractedLocally: false,
-          },
-        ],
-        description: 'Project information was not separately provided. The website should present the supplied photographs without inventing project facts.',
-        spatialVision: 'Project information not provided.',
-        materials: [],
-        lighting: 'Project information not provided.',
-        metadata: {
-          year: 'Not provided',
-          locationPlaceholder: 'Not provided',
-          intensity: 'Not provided',
-          palette: [],
-        },
-      },
-      {
-        id: 'aarushi-project-02',
-        title: 'Project 02',
-        subtitle: 'Selected project by Aarushi Panda',
-        category: 'Interior Design',
-        leadFounder: 'Aarushi Panda',
-        sourcePdf: 'Provided project image assets',
-        sourcePages: [],
-        images: [
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Aarushi Project 02 — Image 01',
-            visualDescription: 'Exact photograph supplied for Aarushi Panda Project 02.',
-            localPath: aarushiProject0201,
-            isExtractedLocally: false,
-          },
-          {
-            sourcePdf: 'Provided project image assets',
-            pageNumber: 0,
-            sourceLabel: 'Aarushi Project 02 — Image 02',
-            visualDescription: 'Exact photograph supplied for Aarushi Panda Project 02.',
-            localPath: aarushiProject0202,
-            isExtractedLocally: false,
-          },
-        ],
-        description: 'Project information was not separately provided. The website should present the supplied photographs without inventing project facts.',
-        spatialVision: 'Project information not provided.',
-        materials: [],
-        lighting: 'Project information not provided.',
-        metadata: {
-          year: 'Not provided',
-          locationPlaceholder: 'Not provided',
-          intensity: 'Not provided',
-          palette: [],
-        },
-      },
-    ],
-  },
-];
+import { FOUNDERS_DATA } from './foundersData';
+export { FOUNDERS_DATA };
 
 export const ALL_VERIFIED_PROJECTS: FounderProject[] = [
   ...FOUNDERS_DATA[0].projects,
@@ -564,22 +353,6 @@ export const BRAND_REFERENCE_PLATES: BrandReferencePlate[] = [
     sourceDocument: 'Advertising & Branding PDF · Page 04',
   },
   {
-    plateNumber: 5,
-    title: 'The Roman Arched Master Sanctum',
-    category: 'Private Residence',
-    imagePath: '/assets/reference_images/lacquered_wine_portal_1789910151255.jpg',
-    palette: ['#2B161A', '#EDE6D8', '#1E1E1E', '#B08C4A', '#887961'],
-    keyMaterials: [
-      'Stepped Plaster Architraves',
-      'Tiered Brass Cylinders',
-      'Checkerboard Marble Tiles',
-      'Floral Brocade Wallcoverings',
-    ],
-    designNotes:
-      'Classical Roman archways frame layered intimate alcoves with wine-toned joinery and alternating checkerboard stone paving.',
-    sourceDocument: 'Advertising & Branding PDF · Page 05',
-  },
-  {
     plateNumber: 6,
     title: 'The Sculptural Wine Curved Sectional',
     category: 'Commercial & Editorial',
@@ -610,38 +383,6 @@ export const BRAND_REFERENCE_PLATES: BrandReferencePlate[] = [
     designNotes:
       'Double-height vaulted dining pavilion floating above the illuminated city skyline, integrating live Japanese maple flora and glowing paper lanterns.',
     sourceDocument: 'Advertising & Branding PDF · Page 07',
-  },
-  {
-    plateNumber: 8,
-    title: 'The Nocturne Amber Crystal Bar',
-    category: 'Nocturnal Hospitality',
-    imagePath: '/assets/reference_images/subterranean_hearth_lounge_1789910163110.jpg',
-    palette: ['#0D0D0D', '#B08C4A', '#1E1E1E', '#887961', '#2B161A'],
-    keyMaterials: [
-      'Suspended Amber Crystal Fronds',
-      'Ebonized Wood Paneling',
-      'Bespoke Floral Velvets',
-      'Backlit Onyx Slabs',
-    ],
-    designNotes:
-      'Intimate evening bar defined by an organic chandelier of hand-blown amber crystal shards casting rippling caustic light onto dark wood paneling.',
-    sourceDocument: 'Advertising & Branding PDF · Page 08',
-  },
-  {
-    plateNumber: 9,
-    title: 'The Tonal Landscape Cocktail Pavilion',
-    category: 'Boutique Hospitality',
-    imagePath: '/assets/reference_images/olive_cane_salon_1789910205218.jpg',
-    palette: ['#887961', '#EDE6D8', '#1E1E1E', '#B08C4A', '#2B161A'],
-    keyMaterials: [
-      'Scenic Sepia Panoramic Wall Mural',
-      'Fluted Stone Bar Island',
-      'Cane High Stools',
-      'Arched Architectural Openings',
-    ],
-    designNotes:
-      'Atmospheric lounge incorporating a scenic panoramic landscape wallpaper behind an arched entry and reeded stone counter.',
-    sourceDocument: 'Advertising & Branding PDF · Page 09',
   },
   {
     plateNumber: 10,
@@ -676,22 +417,6 @@ export const BRAND_REFERENCE_PLATES: BrandReferencePlate[] = [
     sourceDocument: 'Advertising & Branding PDF · Page 11',
   },
   {
-    plateNumber: 12,
-    title: 'The Monochromatic Wine Drawing Room',
-    category: 'Private Residence',
-    imagePath: '/assets/reference_images/wine_velvet_camaleonda_1789910097863.jpg',
-    palette: ['#2B161A', '#59604A', '#EDE6D8', '#B08C4A', '#1E1E1E'],
-    keyMaterials: [
-      'Saturated Wine Wall Plaster',
-      'Olive Green Velvet Modulars',
-      'Cobalt Velvet Chair Accent',
-      'Sculptural Mantle Splash Art',
-    ],
-    designNotes:
-      'Complete chromatic immersion in deep OVERDOSE wine (#2B161A), contrasted with tactile olive green seating and dramatic modern canvas work.',
-    sourceDocument: 'Advertising & Branding PDF · Page 12',
-  },
-  {
     plateNumber: 13,
     title: 'Skin Atelier Luxury Reception',
     category: 'Commercial & Wellness Atelier',
@@ -724,22 +449,6 @@ export const BRAND_REFERENCE_PLATES: BrandReferencePlate[] = [
     sourceDocument: 'Advertising & Branding PDF · Page 14',
   },
   {
-    plateNumber: 15,
-    title: 'The Low-Slung Velvet Sanctum',
-    category: 'Intimate Salon',
-    imagePath: '/assets/reference_images/wine_velvet_camaleonda_1789910097863.jpg',
-    palette: ['#1E1E1E', '#2B161A', '#887961', '#B08C4A', '#EDE6D8'],
-    keyMaterials: [
-      'Rust & Navy Velvet Modular',
-      'Antiqued Distressed Mirror',
-      'Cast Bronze Coffee Discs',
-      'Chiaroscuro Uplights',
-    ],
-    designNotes:
-      'Sensory comfort through low-profile modular seating in complementary jewel tones, framed by antiqued glass reflections.',
-    sourceDocument: 'Advertising & Branding PDF · Page 15',
-  },
-  {
     plateNumber: 16,
     title: 'The Industrial Zebra & Wine Loft',
     category: 'Double-Height Urban Loft',
@@ -770,6 +479,93 @@ export const BRAND_REFERENCE_PLATES: BrandReferencePlate[] = [
     designNotes:
       'The authoritative branding flatlay from the proposal, encapsulating the audacious, tactile spirit of the OVERDOSE studio.',
     sourceDocument: 'Advertising & Branding PDF · Page 17',
+  },
+];
+
+/**
+ * Editorial metadata preserved for the remaining proposal plates.
+ * These are ready for immediate one-click activation once their unique high-res photographic assets are supplied.
+ */
+export const ARCHIVED_REFERENCE_PLATES_METADATA: BrandReferencePlate[] = [
+  {
+    plateNumber: 5,
+    title: 'The Roman Arched Master Sanctum',
+    category: 'Private Residence',
+    imagePath: '',
+    palette: ['#2B161A', '#EDE6D8', '#1E1E1E', '#B08C4A', '#887961'],
+    keyMaterials: [
+      'Stepped Plaster Architraves',
+      'Tiered Brass Cylinders',
+      'Checkerboard Marble Tiles',
+      'Floral Brocade Wallcoverings',
+    ],
+    designNotes:
+      'Classical Roman archways frame layered intimate alcoves with wine-toned joinery and alternating checkerboard stone paving. Corresponds to Proposal PDF Page 04 (Rosso Levanto console & archway).',
+    sourceDocument: 'Advertising & Branding PDF · Page 05',
+  },
+  {
+    plateNumber: 8,
+    title: 'The Nocturne Amber Crystal Bar',
+    category: 'Nocturnal Hospitality',
+    imagePath: '',
+    palette: ['#0D0D0D', '#B08C4A', '#1E1E1E', '#887961', '#2B161A'],
+    keyMaterials: [
+      'Suspended Amber Crystal Fronds',
+      'Ebonized Wood Paneling',
+      'Bespoke Floral Velvets',
+      'Backlit Onyx Slabs',
+    ],
+    designNotes:
+      'Intimate evening bar defined by an organic chandelier of hand-blown amber crystal shards casting rippling caustic light onto dark wood paneling. Corresponds to Proposal PDF Page 06 (Amber illuminated bookcase salon).',
+    sourceDocument: 'Advertising & Branding PDF · Page 08',
+  },
+  {
+    plateNumber: 9,
+    title: 'The Tonal Landscape Cocktail Pavilion',
+    category: 'Boutique Hospitality',
+    imagePath: '',
+    palette: ['#887961', '#EDE6D8', '#1E1E1E', '#B08C4A', '#2B161A'],
+    keyMaterials: [
+      'Scenic Sepia Panoramic Wall Mural',
+      'Fluted Stone Bar Island',
+      'Cane High Stools',
+      'Arched Architectural Openings',
+    ],
+    designNotes:
+      'Atmospheric lounge incorporating a scenic panoramic landscape wallpaper behind an arched entry and reeded stone counter. Corresponds to Proposal PDF Page 02 (Green marble sphere table & olive sofa).',
+    sourceDocument: 'Advertising & Branding PDF · Page 09',
+  },
+  {
+    plateNumber: 12,
+    title: 'The Monochromatic Wine Drawing Room',
+    category: 'Private Residence',
+    imagePath: '',
+    palette: ['#2B161A', '#59604A', '#EDE6D8', '#B08C4A', '#1E1E1E'],
+    keyMaterials: [
+      'Saturated Wine Wall Plaster',
+      'Olive Green Velvet Modulars',
+      'Cobalt Velvet Chair Accent',
+      'Sculptural Mantle Splash Art',
+    ],
+    designNotes:
+      'Complete chromatic immersion in deep OVERDOSE wine (#2B161A), contrasted with tactile olive green seating and dramatic modern canvas work. Corresponds to Proposal PDF Page 05 (Night skyline dining room with wave fixture).',
+    sourceDocument: 'Advertising & Branding PDF · Page 12',
+  },
+  {
+    plateNumber: 15,
+    title: 'The Low-Slung Velvet Sanctum',
+    category: 'Intimate Salon',
+    imagePath: '',
+    palette: ['#1E1E1E', '#2B161A', '#887961', '#B08C4A', '#EDE6D8'],
+    keyMaterials: [
+      'Rust & Navy Velvet Modular',
+      'Antiqued Distressed Mirror',
+      'Cast Bronze Coffee Discs',
+      'Chiaroscuro Uplights',
+    ],
+    designNotes:
+      'Sensory comfort through low-profile modular seating in complementary jewel tones, framed by antiqued glass reflections. Corresponds to Proposal PDF Page 08 (Chinoiserie salon with leopard chaise).',
+    sourceDocument: 'Advertising & Branding PDF · Page 15',
   },
 ];
 
