@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 interface OverdoseLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
   withTagline?: boolean;
@@ -39,11 +38,11 @@ export const OverdoseLogo: React.FC<OverdoseLogoProps> = ({
       } ${className}`}
     >
       <img
-       src={
-  withTagline
-    ? "/assets/logo/overdose_logo_tagline.svg"
-    : "/assets/logo/overdose_logo.svg"
-}
+        src={
+          withTagline
+            ? "/assets/logo/overdose_logo_tagline.svg"
+            : "/assets/logo/overdose_logo.svg"
+        }
         alt="OVERDOSE"
         className={`h-auto object-contain transition-all duration-300 ${
           withTagline
@@ -67,7 +66,7 @@ export const OverdoseMonogram: React.FC<{
       style={{ width: size, height: size }}
     >
       <img
-       src="/assets/logo/overdose_monogram.svg"
+        src="/assets/logo/overdose_monogram.svg"
         alt="OVERDOSE"
         className="w-full h-full object-contain"
       />
@@ -86,7 +85,7 @@ export const CuratedExcessStamp: React.FC<{
       style={{ width: size, height: size }}
     >
       <img
-        src={overdoseMonogram}
+        src="/assets/logo/overdose_monogram.svg"
         alt="OVERDOSE"
         className="w-full h-full object-contain"
       />
