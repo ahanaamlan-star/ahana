@@ -39,7 +39,11 @@ export const OverdoseLogo: React.FC<OverdoseLogoProps> = ({
       } ${className}`}
     >
       <img
-        src={withTagline ? overdoseLogoTagline : overdoseLogo}
+       src={
+  withTagline
+    ? "/assets/logo/overdose_logo_tagline.svg"
+    : "/assets/logo/overdose_logo.svg"
+}
         alt="OVERDOSE"
         className={`h-auto object-contain transition-all duration-300 ${
           withTagline
