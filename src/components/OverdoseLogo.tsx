@@ -40,8 +40,8 @@ export const OverdoseLogo: React.FC<OverdoseLogoProps> = ({
       <img
         src={
           withTagline
-            ? "/assets/logo/overdose_logo_tagline.svg"
-            : "/assets/logo/overdose_logo.svg"
+            ? '/assets/logo/overdose_logo_tagline.svg'
+            : '/assets/logo/overdose_logo.svg'
         }
         alt="OVERDOSE"
         className={`h-auto object-contain transition-all duration-300 ${
@@ -63,7 +63,10 @@ export const OverdoseMonogram: React.FC<{
     <div
       id="overdose-seal-monogram"
       className={`relative inline-flex items-center justify-center ${className}`}
-      style={{ width: size, height: size }}
+      style={{
+        width: size,
+        height: size,
+      }}
     >
       <img
         src="/assets/logo/overdose_monogram.svg"
@@ -82,7 +85,31 @@ export const CuratedExcessStamp: React.FC<{
   return (
     <div
       className={`relative inline-flex items-center justify-center select-none ${className}`}
-      style={{ width: size, height: size }}
+      style={{
+        width: size,
+        height: size,
+      }}
+    >
+      <img
+        src="/assets/logo/overdose_monogram.svg"
+        alt="OVERDOSE"
+        className="w-full h-full object-contain"
+      />
+    </div>
+  );
+};
+
+export const OverdoseInterlockingRings: React.FC<{
+  size?: number;
+  className?: string;
+}> = ({ size = 80, className = '' }) => {
+  return (
+    <div
+      className={`relative inline-flex items-center justify-center ${className}`}
+      style={{
+        width: size,
+        height: size,
+      }}
     >
       <img
         src="/assets/logo/overdose_monogram.svg"
