@@ -67,7 +67,7 @@ export const OverdoseMonogram: React.FC<{
       style={{ width: size, height: size }}
     >
       <img
-        src={overdoseMonogram}
+       src="/assets/logo/overdose_monogram.svg"
         alt="OVERDOSE"
         className="w-full h-full object-contain"
       />
