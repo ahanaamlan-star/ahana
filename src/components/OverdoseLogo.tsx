@@ -1,8 +1,5 @@
 import React from 'react';
 
-import overdoseLogo from '../assets/logo/overdose_logo.svg';
-import overdoseLogoTagline from '../assets/logo/overdose_logo_tagline.svg';
-import overdoseMonogram from '../assets/logo/overdose_monogram.svg';
 
 interface OverdoseLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
