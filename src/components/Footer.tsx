@@ -1,6 +1,6 @@
 import React from 'react';
 import { OverdoseLogo } from './OverdoseLogo';
-import { Instagram, ArrowUp } from 'lucide-react';
+import { Instagram, Youtube, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -8,12 +8,17 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer id="overdose-footer" className="bg-[#0D0D0D] text-[#EDE6D8] border-t border-[#EDE6D8]/15 pt-20 pb-12 px-6 sm:px-8 lg:px-16 relative overflow-hidden">
+    <footer
+      id="overdose-footer"
+      className="bg-[#0D0D0D] text-[#EDE6D8] border-t border-[#EDE6D8]/15 pt-20 pb-12 px-6 sm:px-8 lg:px-16 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto space-y-16">
+
         {/* Top Tier: Big Logo & Philosophy Mantra */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 pb-12 border-b border-[#EDE6D8]/10">
           <div className="space-y-4">
             <OverdoseLogo size="lg" withTagline={true} />
+
             <p className="text-xs sm:text-sm text-[#887961] max-w-md font-light leading-relaxed">
               Curated Excess. Intentional maximalism where colour, texture, form, light, materials,
               objects and art are layered deliberately to create emotional experiences.
@@ -24,6 +29,7 @@ export const Footer: React.FC = () => {
             <span className="font-serif-luxury text-2xl sm:text-3xl text-[#B08C4A] italic block">
               “WE DON’T DECORATE. WE INTENSIFY.”
             </span>
+
             <span className="text-[11px] uppercase tracking-[0.25em] text-[#D8D0C5]/80 font-mono block">
               CONSISTENT · CONSIDERED · OVERDOSE
             </span>
@@ -32,11 +38,13 @@ export const Footer: React.FC = () => {
 
         {/* Middle Tier: 4 Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-xs">
+
           {/* Col 1: Studio Ethos */}
           <div className="space-y-3">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#B08C4A] font-mono block">
               Spatial Philosophy
             </span>
+
             <ul className="space-y-2 text-[#D8D0C5]/80 font-light">
               <li>01 — Spatial Transformations & Living Commissions</li>
               <li>02 — Tactile Materiality & Seductive Mass</li>
@@ -46,12 +54,15 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 2: Official Social Channel */}
+          {/* Col 2: Official Social Channels */}
           <div className="space-y-3">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#B08C4A] font-mono block">
               Social Presence
             </span>
+
             <div className="space-y-3 pt-1">
+
+              {/* Instagram */}
               <a
                 href="https://www.instagram.com/overdose.the.studio/"
                 target="_blank"
@@ -59,13 +70,38 @@ export const Footer: React.FC = () => {
                 className="group flex items-center gap-3 p-3 bg-[#141414] border border-[#EDE6D8]/10 hover:border-[#B08C4A]/40 transition-colors"
               >
                 <Instagram className="w-5 h-5 text-[#B08C4A] group-hover:scale-110 transition-transform" />
+
                 <div>
-                  <span className="text-[11px] text-[#EDE6D8] font-medium block">Instagram</span>
+                  <span className="text-[11px] text-[#EDE6D8] font-medium block">
+                    Instagram
+                  </span>
+
                   <span className="text-[10px] font-mono text-[#887961] group-hover:text-[#B08C4A] transition-colors">
                     @overdose.the.studio
                   </span>
                 </div>
               </a>
+
+              {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@overdose.the.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 p-3 bg-[#141414] border border-[#EDE6D8]/10 hover:border-[#B08C4A]/40 transition-colors"
+              >
+                <Youtube className="w-5 h-5 text-[#B08C4A] group-hover:scale-110 transition-transform" />
+
+                <div>
+                  <span className="text-[11px] text-[#EDE6D8] font-medium block">
+                    YouTube
+                  </span>
+
+                  <span className="text-[10px] font-mono text-[#887961] group-hover:text-[#B08C4A] transition-colors">
+                    @overdose.the.studio
+                  </span>
+                </div>
+              </a>
+
             </div>
           </div>
 
@@ -74,6 +110,7 @@ export const Footer: React.FC = () => {
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#B08C4A] font-mono block">
               Atelier Coordinates
             </span>
+
             <p className="text-[#D8D0C5]/80 leading-relaxed font-light">
               Bangalore Atelier: Lavelle Road, Bangalore 560001
               <br />
@@ -81,6 +118,7 @@ export const Footer: React.FC = () => {
               <br />
               Direct: atelier@overdose-studio.com
             </p>
+
             <div className="pt-2">
               <span className="text-[10px] text-[#887961] block font-mono">
                 BY PRIVATE APPOINTMENT ONLY
@@ -94,12 +132,15 @@ export const Footer: React.FC = () => {
               <span className="text-[10px] uppercase tracking-[0.25em] text-[#B08C4A] font-mono block mb-2">
                 Creative Directors
               </span>
+
               <p className="text-[#EDE6D8] font-medium font-serif-luxury text-sm">
                 Aarushi Panda
               </p>
+
               <p className="text-[#EDE6D8] font-medium font-serif-luxury text-sm mt-0.5">
                 Tejaswi MK
               </p>
+
               <p className="text-[11px] text-[#887961] mt-1 font-sans-editorial">
                 OVERDOSE Interior Architecture Atelier
               </p>
@@ -117,11 +158,15 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 border-t border-[#EDE6D8]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#887961]">
-          <p>© {new Date().getFullYear()} OVERDOSE Interior Design Studio. All Rights Reserved.</p>
+          <p>
+            © {new Date().getFullYear()} OVERDOSE Interior Design Studio. All Rights Reserved.
+          </p>
+
           <p className="text-[10px] tracking-wider text-[#887961]/80">
             Curated Excess · Intentional Maximalism · Editorial Archive
           </p>
         </div>
+
       </div>
     </footer>
   );
